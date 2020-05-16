@@ -34,4 +34,4 @@ wss2.on('connection',function(ws){
 
 
 server.listen(process.env.PORT || 8001);
-server2.listen(process.env.PORT+1 || 8002);
+server2.listen(8002);
