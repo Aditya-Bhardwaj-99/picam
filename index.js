@@ -3,7 +3,7 @@ const AvcServer = require('../lib/server')
 const webss=require("ws").Server;
 const app=require("express")();
 var server=http.createServer(app);
-var wss= new webss({server:server, path:"/picam"});
+var wss= new webss({server:server});
 
 app.get('/',function(req,res){
     res.end("Server working");
