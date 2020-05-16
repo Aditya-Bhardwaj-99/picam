@@ -9,6 +9,8 @@ app.get('/',function(req,res){
     res.end("Server working");
 })
 
+app.use(express.static(path.resolve(__dirname, '/lib')))
+
 const avcServer = new AvcServer(wss, width, height)
 
 // handling custom events from client
