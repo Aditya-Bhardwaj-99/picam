@@ -12,6 +12,10 @@
     "express": "^4.17.1",
     "http": "0.0.1-security",
     "raspivid-stream": "^0.2.1",
-    "ws": "^7.3.0"
+    "ws": "^7.3.0",
+    "debug": "^4.1.1",
+    "stream-split": "^1.1.0",
+    "string-replace-loader": "^2.2.0",
+    "sylvester.js": "^0.1.1"
   }
 }
