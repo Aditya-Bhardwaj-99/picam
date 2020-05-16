@@ -1,5 +1,5 @@
 const http=require("http");
-const AvcServer = require('./server')
+const AvcServer = require('./lib/server')
 const webss=require("ws").Server;
 const express=require("express");
 const app=express();
