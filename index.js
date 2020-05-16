@@ -1,5 +1,5 @@
 const http=require("http");
-const AvcServer = require('./lib/server')
+const AvcServer = require('./server')
 const webss=require("ws").Server;
 const express=require("express");
 const app=express();
@@ -10,7 +10,7 @@ app.get('/',function(req,res){
     res.end("Server working");
 })
 
-app.use(express.static(path.resolve(__dirname, '/lib')))
+app.use(express.static(__dirname, '/lib'))
 
 const avcServer = new AvcServer(wss, width, height)
 
