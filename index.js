@@ -10,7 +10,9 @@ app.get('/',function(req,res){
     res.end("Server working");
 })
 
-app.use(express.static(__dirname, '/lib'))
+app.use(express.static(__dirname+'/lib'))
+const width = 1280
+const height = 720
 
 const avcServer = new AvcServer(wss, width, height)
 
