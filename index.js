@@ -7,7 +7,7 @@ const app2=express();
 var server=http.createServer(app);
 var server2=http.createServer(app2);
 var wss= new webss({server:server});
-var wss2=new webss({server:server2,path='/picam'});
+var wss2=new webss({server:server2,path:'/picam'});
 
 app.get('/',function(req,res){
     res.end("Server working");
